@@ -1,0 +1,35 @@
+{
+    "products": [
+        {
+            "index" : 0,
+            "img" : "assets/tshirt1.webp",
+            "name" : "Nikky Boy Classic Elegant Men T-shirts",
+            "price" : 261,
+            "quantity" : 1
+        }, 
+        {
+            "img" : "assets/tshirt3.webp",
+            "name" : "Men's Brown Stoned Rick & Morty Graphic Printed Oversized Acid Wash T-shirt",
+            "price" : 260,
+            "quantity" : 1
+        }, 
+        {
+            "img" : "assets/tshirt4.webp",
+            "name" : "Nb Nicky Boy Printed Men Round Neck White T-shirt",
+            "price" : 359,
+            "quantity" : 1
+        }, 
+        {
+            "img" : "assets/tshirt5.webp",
+            "name" : "Nikky Boy Classic Elegant Men T-shirts",
+            "price" : 624,
+            "quantity" : 1
+        }, 
+        {
+            "img" : "assets/tshirt6.webp",
+            "name" : "Veirdo Printed, Typography Men Round Neck White T-shirt",
+            "price" : 674,
+            "quantity" : 1
+        }
+    ]
+}

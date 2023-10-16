@@ -1,0 +1,28 @@
+
+/* To remove the default increment/decrement button */
+input[type=number] {
+    appearance: textfield;
+}
+
+.bg-grey {
+    background-color: lightgray;
+    border: none;
+}
+
+img{
+    /* width: auto;*/
+    height: 300px; 
+    object-fit:scale-down;
+    margin: auto;
+}
+.products{
+    width: 100%;
+    padding: 40px;
+    align-items: center;
+}
+.item{
+    /* align-self: center; */
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}

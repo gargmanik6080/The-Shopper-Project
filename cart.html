@@ -10,22 +10,13 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="cart.css">
-		<script src="cart.js"></script>
+		<link rel="stylesheet" href="styles/cart.css">
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Your Shop</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarNavAltMarkup"
-					aria-controls="navbarNavAltMarkup"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
+				<a class="navbar-brand" href="products.html">Your Shop</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -42,7 +33,7 @@
 				<h1 class="mt-4">MY CART</h1>
 			</div>
 			<div class="col-5"></div>
-
+			
 			<div class="m-2 p-2 row">
 				<div class="details col-7 row h5 border-bottom text-center">
 					<div class="col-5">PRODUCT</div>
@@ -51,7 +42,7 @@
 					<div class="col">TOTAL</div>
 				</div>
 				<div class="col-1"></div>
-
+				
 				<div class="summary col-4">
 					<div class="container bg-secondary">
 						<h2>SUMMARY</h2>
@@ -59,35 +50,13 @@
 				</div>
 			</div>
 
-			<div class="m-2 p-2 row">
-				<div class="details col-7 row">
-					<div class="col-5 text-start">Cloth</div>
-					<div class="col-2">100</div>
-					<div class="col-3">
-						<div class="">
-							<center>
-							<div class="input-group ">
-								<button type="button" class="btn  rounded-start-pill align-middle bg-grey" id="quantity-left-minus" onclick="quantity(-1)">-</button>
-								<input type="number" id="quantity" size="2" step="1" class="text-center align-middle bg-grey" value="1" max="99" />
-								<button type="button" class="btn  rounded-end-pill align-middle bg-grey" id="quantity-right-plus " onclick="quantity(1)">+</button>
-							</div>
-							</center>
-						</div>
-					</div>
-					<div class="col">&#8377; 1000</div>
-					<div class="col-1"></div>
-
-					<div class="summary col-4">
-						<div class="container bg-secondary"></div>
-					</div>
-				</div>
+			<div class="m-2 p-2 row" id="product1">
+				
+				<div id="iid"></div>
 			</div>
-
+			
 			
 		</div>
 	</body>
-	<script>
-
-
-	</script>
-</html>
+	<script src="scripts/cart.js"></script>
+	</html>

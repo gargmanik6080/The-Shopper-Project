@@ -8,7 +8,7 @@ function load() {
         fetch(productFile).then( (res) => {
             return res.json();
         }).then( (data) => {
-            localStorage.setItem("products", JSON.stringify(data));
+            localStorage.setItem("products", JSON.stringify(data["products"]));
             renderProducts(data["products"]);
         });
     }
@@ -32,7 +32,7 @@ function renderProducts(data){
                     <div class="input-group ">
                                 <span style="margin-top:4px">Add more to cart:</span> &nbsp;&nbsp;&nbsp;&nbsp;
 								<button type="button" class="btn  rounded-start-pill align-middle bg-grey" id="quantity-left-minus" onclick="quantity(-1, ${element["index"]})">-</button>
-								<input type="number" id="quantity${element["index"]}" size="2" step="1" class="text-center align-middle bg-grey" value="${element["quantity"]}" max="99" />
+								<input type="number" id="quantity${element["index"]}" size="2" step="1" class="text-center align-middle bg-grey" value="${element["quantity"]}" onchange="quantity(0, ${element["index"]} )"/>
 								<button type="button" class="btn  rounded-end-pill align-middle bg-grey" id="quantity-right-plus " onclick="quantity(1, ${element["index"]})">+</button>
 							</div>
 							</center>
@@ -56,10 +56,12 @@ function updateQuantity(index, newVal){
     // console.log(localStorage.getItem("products"));
     localStorage.removeItem("products");
     localStorage.setItem("products", JSON.stringify(list));
-    console.log(localStorage.getItem("products"));
+    // console.log(localStorage.getItem("products"));
 }
 
 function clearCart(){
     localStorage.clear();
     load();
 }
+
+// function 

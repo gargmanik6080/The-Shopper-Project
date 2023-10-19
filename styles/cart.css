@@ -1,3 +1,4 @@
+/* Other Browsers */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -17,7 +18,6 @@ input[type=number] {
 	width : 30px;
 	height : 30px;
 	border-radius: 50%;
-	/* align-self: right; */
 	text-align: center;
 }
 .details{
@@ -29,14 +29,19 @@ input[type=number] {
 	justify-content: center; 
     vertical-align: middle;
 }
-/* .summary{
-	display: flex;
-	justify-content: center; 
-	vertical-align: middle;
+/* .input-group{
+	display: inline-block;
+	margin: 0%;
 } */
+
 .productlist{
 	/* width: 99%; */
 }
 .summary{
-	margin-right: 5%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+.btn-align{
+    margin-left: 40%;
+    margin-bottom: 5%;
 }

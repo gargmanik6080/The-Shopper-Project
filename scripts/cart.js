@@ -1,8 +1,23 @@
+const productFile = "../assets/productList.json";
 window.onload = load();
+
+
 function load() {
+    if(localStorage.getItem("products") == null ){
+        fetch(productFile).then( (res) => {
+            return res.json();
+        }).then( (data) => {
+            localStorage.setItem("products", JSON.stringify(data["products"]));
+            renderProducts(data["products"]);
+        });
+    }
+    else renderProducts( JSON.parse(localStorage.getItem("products")) );
+}
+
+function renderProducts(data) {
 	ele = document.getElementById("product1");
 	str = "";
-	data = JSON.parse(localStorage.getItem("products"));
+	// data = JSON.parse(localStorage.getItem("products"));
     total = 0;
     num = 0;
 	data.forEach((element) => {
@@ -33,13 +48,11 @@ function load() {
 `;
 		}
 	});
-	// console.log(ele);                <div class="summary col-4"></div>
-
-	// console.log(str);
+;
 	ele.innerHTML = str;
-    document.getElementById("grand-total").innerHTML = "&#8377; " + total;
-    document.getElementById("sub-total").innerHTML = "&#8377; " + total;
-    document.getElementById("item-num").innerHTML = num;
+    document.getElementById("grand-total").innerHTML = ": &#8377; " + total;
+    document.getElementById("sub-total").innerHTML = ": &#8377; " + total;
+    document.getElementById("item-num").innerHTML = ": " + num;
     if(num == 0){
         ele.innerHTML = `
 
@@ -51,13 +64,6 @@ function load() {
         `;
     }
 }
-// function quantity(x, index) {
-// 	ele = document.getElementById(`quantity${index}`);
-// 	if (ele.value == 0 && x == -1) return;
-// 	ele.value = parseInt(ele.value) + x;
-// 	update();
-// 	// console.log(val);
-// }
 
 
 function quantity(x, index){
@@ -81,7 +87,12 @@ function updateQuantity(index, newVal){
     // console.log(localStorage.getItem("products"));
 }
 
+
 function delt(index){
     ele = document.getElementById(`quantity${index}`);
     quantity(ele.value*(-1), index);
+}
+function clearCart(){
+    localStorage.clear();
+    load();
 }

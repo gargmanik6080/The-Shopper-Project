@@ -6,10 +6,37 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .bg-grey {
     background-color: lightgray;
     border: none;
+}
+.del {
+	width : 30px;
+	height : 30px;
+	border-radius: 50%;
+	/* align-self: right; */
+	text-align: center;
+}
+.details{
+	/* margin-top: 0.25%; */
+	margin-bottom: 0.25%;
+}
+.input-group, .price, .del, .total{
+	display: flex;
+	justify-content: center; 
+    vertical-align: middle;
+}
+/* .summary{
+	display: flex;
+	justify-content: center; 
+	vertical-align: middle;
+} */
+.productlist{
+	/* width: 99%; */
+}
+.summary{
+	margin-right: 5%;
 }

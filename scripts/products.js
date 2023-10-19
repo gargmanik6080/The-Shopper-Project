@@ -45,10 +45,12 @@ function renderProducts(data){
 function quantity(x, index){
     ele = document.getElementById(`quantity${index}`);
     if(ele.value == 0 && x == -1) return ; 
-    newVal = parseInt(ele.value)+x;
+    if(ele.value < 0) newVal = 0;
+    else if(ele.value == 99 && x == -1) newVal = 98;
+    else if( ele.value > 98) newVal = 99;
+    else newVal = parseInt(ele.value)+x;
     ele.value  = newVal;
     updateQuantity(index, newVal);
-    // console.log(val);
 }
 
 function updateQuantity(index, newVal){

@@ -10,13 +10,22 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="styles/cart.css">
+		<link rel="stylesheet" href="styles/cart.css" />
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="products.html">Your Shop</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -27,35 +36,60 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container-lg text-center">
+		<!-- <div class="col-5"></div> -->
+		<div class="row">
 			<div class="col-5"></div>
-			<div class="">
-				<h1 class="mt-4">MY CART</h1>
-			</div>
-			<div class="col-5"></div>
-			
-			<div class="m-2 p-2 row">
-				<div class="details col-7 row h5 border-bottom text-center">
-					<div class="col-5">PRODUCT</div>
-					<div class="col-2">PRICE</div>
-					<div class="col-3 ">QUANTITY</div>
-					<div class="col">TOTAL</div>
-				</div>
-				<div class="col-1"></div>
+			<h1 class="mt-4 col">MY CART</h1>
+		</div>
+		<!-- <div class="col-5"></div> -->
+
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="container-lg text-center col-7">
 				
-				<div class="summary col-4">
-					<div class="container bg-secondary">
-						<h2>SUMMARY</h2>
+				<div class="row">
+					<div class="details col row p-4 h5 border-bottom text-center">
+						<div class="col-5">PRODUCT</div>
+						<div class="col-2">PRICE</div>
+						<div class="col-3">QUANTITY</div>
+						<div class="col-2">TOTAL</div>
 					</div>
+					<div class="col-1"></div>
+
+				</div>
+				
+				<!-- PRODUCTS BOX -->
+				<div class="productlist" id="product1">
+					<!-- <div id="iid"></div> -->
 				</div>
 			</div>
 
-			<div class="m-2 p-2 row" id="product1">
-				
-				<div id="iid"></div>
+			<!-- SUMMARY BOX-->
+			<div class="col summary p-4 ">
+				<div class="row border-bottom">
+					<!-- <div class="col"></div> -->
+					<h2 class="bg-grey col-12 text-center p-2">SUMMARY</h2>
+					<!-- <div class="col"></div> -->
+				</div>
+				<!-- <div class="col-1"></div> -->
+				<div class="text-start bg-grey p-4 m-4">
+					<div class="row">
+						<span class="col-7">Number of Items :</span> <span class="col-5 text-start" id="item-num"></span><br>
+					</div>
+
+					<div class="row">
+						<span class="col-7">Subtotal :</span> <span class="col-5 text-start" id="sub-total"></span>
+					</div>
+					<div class="row">
+						<span class="col-7">Shipping Fees :</span> <span class="col-5 text-start"> Free </span>
+					</div>
+					<div class="row">
+						<span class="col-7"> Grand Total : </span> <span class="col-5 text-start" id="grand-total"></span>
+					</div>
+					<br />
+				</div>
 			</div>
-			
 		</div>
 	</body>
 	<script src="scripts/cart.js"></script>
-	</html>
+</html>

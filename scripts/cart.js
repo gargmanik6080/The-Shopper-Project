@@ -59,7 +59,7 @@ function renderProducts(data) {
                 <div class="empty mt-4 mt-4"> 
                     There is no item in your cart!!!<br>
                     Add items to shop <br>
-                    <a href="./products.html" > Continue Shopping... </a>
+                    <a href="./index.html" > Continue Shopping... </a>
                 </div>
 
         `;

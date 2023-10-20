@@ -29,7 +29,7 @@ This project is a dynamic 2-page shopping website that allows users to view and 
 
 1. Clone this repository to your local machine.
 
-2. Open the `products.html` file in your web browser to access the Products Page.
+2. Open the `index.html` file in your web browser to access the Products Page.
 
 3. View and add products to the shopping cart. Click on "Go to Cart" to access the Cart Page.
 
@@ -39,7 +39,7 @@ This project is a dynamic 2-page shopping website that allows users to view and 
 
 ## File Structure
 
-- `products.html`: The Products Page HTML file.
+- `index.html`: The Products Page HTML file.
 - `cart.html`: The Cart Page HTML file.
 - `styles/`: Directory containing CSS styles for both pages.
 - `scripts/`: Directory containing JavaScript files for both pages.

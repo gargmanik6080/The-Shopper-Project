@@ -100,7 +100,18 @@ function clearCart(){
 
 function buy(){
     let num = document.getElementById("item-num").innerHTML;
-    if(num )
+    if(num == ": 0") {
+        alert("To buy, add some items in your cart first.");
+        return ;
+    }
+    
     alert('The items will be delivered within a few days.') ;
     clearCart();
+}
+
+setTimeout(stockmsg, 10000);
+function stockmsg(){
+    document.getElementById("stock").innerHTML = `
+            Hurry and Checkout !!! Before the items are out of stock
+    `
 }

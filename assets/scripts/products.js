@@ -54,7 +54,6 @@ function quantity(x, index){
     if(newVal == ele.value) return ;
     if(isNaN(newVal)) newVal = 0;
 
-    console.log(newVal);
     ele.value  = newVal;
     updateQuantity(index, newVal);
 }

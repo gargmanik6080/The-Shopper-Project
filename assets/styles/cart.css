@@ -73,3 +73,8 @@ input[type=number] {
 		margin-top: 8%;
 	}
 }
+#stock {
+	font-size: larger;
+	font-weight: 600;
+	background-color: rgb(255, 187, 187);
+}

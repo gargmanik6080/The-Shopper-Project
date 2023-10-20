@@ -41,9 +41,9 @@ This project is a dynamic 2-page shopping website that allows users to view and 
 
 - `index.html`: The Products Page HTML file.
 - `cart.html`: The Cart Page HTML file.
-- `styles/`: Directory containing CSS styles for both pages.
-- `scripts/`: Directory containing JavaScript files for both pages.
-- `assets/` : Directory containing a JSON file containg details of products and a directory containing images of products and the icons used in the webpages.
+- `assets/styles/`: Directory containing CSS styles for both pages.
+- `assets/scripts/`: Directory containing JavaScript files for both pages.
+- `assets/` : Directory containing a JSON file containg details of products and directories containing `scripts`, `styles`, images of products and the `icons` used in the webpages.
 
 ## Additional Information
 

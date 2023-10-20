@@ -70,10 +70,11 @@ function renderProducts(data) {
 function quantity(x, index){
     ele = document.getElementById(`quantity${index}`);
     newVal = parseInt(ele.value)+x;
+    
     if(newVal < 0) newVal = 0 ; 
     else if( newVal > 99 ) newVal = 99;
-    // else if( ele.value > 98 ) newVal = 99;
-    // else 
+    else if(isNaN(newVal)) newVal = 0;
+
     ele.value  = newVal;
     updateQuantity(index, newVal);
 }
@@ -81,11 +82,10 @@ function quantity(x, index){
 function updateQuantity(index, newVal){
     list = JSON.parse(localStorage.getItem("products"));
     list[index].quantity = newVal;
-    // console.log(localStorage.getItem("products"));
+
     localStorage.removeItem("products");
     localStorage.setItem("products", JSON.stringify(list));
     load();
-    // console.log(localStorage.getItem("products"));
 }
 
 
@@ -96,4 +96,11 @@ function delt(index){
 function clearCart(){
     localStorage.clear();
     load();
+}
+
+function buy(){
+    let num = document.getElementById("item-num").innerHTML;
+    if(num )
+    alert('The items will be delivered within a few days.') ;
+    clearCart();
 }

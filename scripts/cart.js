@@ -34,7 +34,7 @@ function renderProducts(data) {
                             <center>
                                 <div class="input-group mb-2 ">
                                         <button type="button" class="btn  rounded-start-pill align-middle bg-grey" id="quantity-left-minus" onclick="quantity(-1, ${element["index"]})">-</button>
-                                        <input type="number" id="quantity${element["index"]}" size="2" step="1" class="text-center align-middle bg-grey" value="${element.quantity}" onchange="quantity(0, ${element["index"]})" />
+                                        <input type="number" id="quantity${element["index"]}" size="2" step="1" class="text-center align-middle bg-grey mx-wid" value="${element.quantity}" onchange="quantity(0, ${element["index"]})" />
                                         <button type="button" class="btn  rounded-end-pill align-middle bg-grey" id="quantity-right-plus " onclick="quantity(1, ${element["index"]})">+</button>
                                 </div>
                             </center>
@@ -60,6 +60,7 @@ function renderProducts(data) {
                     There is no item in your cart!!!<br>
                     Add items to shop <br>
                     <a href="./products.html" > Continue Shopping... </a>
+                </div>
 
         `;
     }

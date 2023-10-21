@@ -109,8 +109,8 @@ function buy(){
     clearCart();
 }
 
-setTimeout(stockmsg, 10000);
-function stockmsg(){
+setTimeout(stockMsg, 10000);
+function stockMsg(){
     document.getElementById("stock").innerHTML = `
             Hurry and Checkout !!! Before the items are out of stock
     `

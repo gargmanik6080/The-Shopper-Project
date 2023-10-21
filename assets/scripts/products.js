@@ -1,16 +1,18 @@
 window.onload = load;
 var list;
-const productFile = "../assets/productList.json";
+const productFile = "../productList.json";
 
 
 function load() {
     if(localStorage.getItem("products") == null ){
+
         fetch(productFile).then( (res) => {
             return res.json();
         }).then( (data) => {
             localStorage.setItem("products", JSON.stringify(data["products"]));
             renderProducts(data["products"]);
         });
+        
     }
     else renderProducts( JSON.parse(localStorage.getItem("products")) );
 }

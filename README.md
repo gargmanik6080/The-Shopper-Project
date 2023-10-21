@@ -2,6 +2,10 @@
 
 This project is a dynamic 2-page shopping website that allows users to view and manage products in a shopping cart. It demonstrates basic JavaScript concepts for CRUD (Create, Read, Update, Delete) operations.
 
+## Demo
+
+Check out the live demo [here](https://the-shopper.vercel.app/) to see the webpage in action.
+
 ## Features
 
 - Page 1: Products Page

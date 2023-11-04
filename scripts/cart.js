@@ -1,7 +1,7 @@
 const productFile = "../assets/productList.json";
-window.onload = load();
+window.onload = load;
 
-
+load()
 function load() {
     if(localStorage.getItem("products") == null ){
         fetch(productFile).then( (res) => {

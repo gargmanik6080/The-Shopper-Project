@@ -1,7 +1,6 @@
 window.onload = load;
 var list;
-const productFile = "../productList.json";
-
+const productFile = "../assets/productList.json";
 
 function load() {
     if(localStorage.getItem("products") == null ){
@@ -12,7 +11,7 @@ function load() {
             localStorage.setItem("products", JSON.stringify(data["products"]));
             renderProducts(data["products"]);
         });
-        
+
     }
     else renderProducts( JSON.parse(localStorage.getItem("products")) );
 }
